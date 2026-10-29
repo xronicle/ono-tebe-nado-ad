@@ -140,45 +140,126 @@
 .lots {
     padding: 180px 24px 0;
 }
-.lots__title {}
-.lots__list {}
-.lots__item {}
-.lots__more {}
 
-.card {}
-.card__body {
+.lots__heading {
+    margin: 0 0 25px 40px;
+    font-size: var(--font-size-extra-large);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    min-height: 595px;
+}
+
+.lots__look-more-link {
+    display: inline-block;
+    margin: 30px 0 0 40px;
+    font-size: var(--font-size-medium);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: none;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    height: 100%;
+    padding: 45px 40px 40px;
+    color: #fff;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card__body_film {
+
+.card_type_film {
     background-image: url("../images/card-lot-01.jpg");
 }
-.card__body_book {
+
+.card_type_book {
     background-image: url("../images/card-lot-02.jpg");
 }
-.card__body_picture {
+
+.card_type_picture {
     background-image: url("../images/card-lot-03.jpg");
 }
+
 .card__title {
     position: relative;
     z-index: 1;
+    font-size: var(--font-size-large);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
 }
+
 .card__text {
     position: relative;
     z-index: 1;
+    font-size: var(--font-size-medium);
+    line-height: 1.2;
 }
 
 .about {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    gap: 25px;
     margin-top: 120px;
     padding-inline: 24px;
 }
-.about__col {}
-.about__logo {}
-.about__logo-img {}
-.about__title {}
-.about__text {}
+
+.about__column {}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    margin-inline: auto;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.about__logo-image {
+    width: 140px;
+}
+
+.about__title {
+    margin: 96px 0 100px;
+    font-size: var(--font-size-extra-large);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: var(--font-size-medium);
+    line-height: 1.2;
+}
 
 .footer {
     padding: 180px 50px 82px;
