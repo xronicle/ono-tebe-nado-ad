@@ -10,51 +10,56 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 90px 50px 96px;
 }
 
-.header__menu {}
 .header__links-list {
     display: flex;
-    gap: 38px;
+    gap: 33px;
     font-size: var(--font-size-small);
 }
+
 .header__links-list-item {
     list-style: circle;
 }
+
 .header__links-list-item_no-bullit {
     list-style: none;
 }
-.header__link {
-    text-decoration: underline;
+
+.header__link,
+.footer__menu-link {
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
     text-decoration-skip-ink: none;
 }
-.header__link_active {
+
+.header__link_active,
+.footer__menu-link_active {
     text-decoration: none;
 }
 
 .header__logo {
     display: block;
-    width: 140px;
+    width: 138px;
 }
-.header__logo-image {}
 
 .header__address {
     justify-self: end;
+    margin-right: 17px;
 }
 
 .address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 200px;
+    max-width: 225px;
     font-size: var(--font-size-small);
     font-style: normal;
+    line-height: 1.35;
 }
+
 .address__link {
-    text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
     text-decoration-skip-ink: none;
@@ -67,7 +72,7 @@
     justify-content: space-between;
     gap: 60px;
     min-height: 757px;
-    padding: 165px 50px 50px;
+    padding: 155px 50px 50px;
     color: #fff;
     background: url("../images/cover.jpg") center / cover no-repeat;
 }
@@ -75,7 +80,7 @@
 .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -83,8 +88,8 @@
     z-index: 1;
     font-size: var(--font-size-omega-large);
     font-weight: 700;
-    line-height: 1.35;
-    letter-spacing: 0.27em;
+    line-height: 1.36;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
 }
 
@@ -104,10 +109,6 @@
     text-align: right;
 }
 
-.letter-spacing-extended {
-    letter-spacing: 0.35em;
-}
-
 .no-letter-spacing {
     letter-spacing: 0;
 }
@@ -123,12 +124,12 @@
 
 .cover__description-text {
     font-size: var(--font-size-large);
-    word-spacing: 24px;
+    word-spacing: 18px;
     text-transform: uppercase;
 }
 
 .bet-button {
-    padding: 16px 36px;
+    padding: 12px 32px;
     border: 1px solid #fff;
     font-size: var(--font-size-large);
     color: inherit;
@@ -141,11 +142,15 @@
     padding: 180px 24px 0;
 }
 
-.lots__heading {
-    margin: 0 0 25px 40px;
+.lots__heading,
+.about__title {
     font-size: var(--font-size-extra-large);
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.lots__heading {
+    margin: 0 0 27px 40px;
 }
 
 .lots__card-list {
@@ -157,7 +162,7 @@
 
 .lots__card-list-item {
     width: 334px;
-    min-height: 595px;
+    min-height: 596px;
 }
 
 .lots__look-more-link {
@@ -180,9 +185,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
     height: 100%;
-    padding: 45px 40px 40px;
+    padding: 48px 40px;
     color: #fff;
     background-position: center;
     background-size: cover;
@@ -210,7 +215,7 @@
     text-transform: uppercase;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
     text-decoration-skip-ink: none;
 }
 
@@ -229,28 +234,23 @@
     padding-inline: 24px;
 }
 
-.about__column {}
-
 .about__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 240px;
     height: 240px;
-    margin-inline: auto;
+    margin: 35px auto 0;
     border-radius: 50%;
     background-color: #000;
 }
 
 .about__logo-image {
-    width: 140px;
+    width: 148px;
 }
 
 .about__title {
-    margin: 96px 0 100px;
-    font-size: var(--font-size-extra-large);
-    font-weight: 700;
-    text-transform: uppercase;
+    margin: 136px 0 100px;
 }
 
 .about__text {
@@ -270,10 +270,8 @@
 
 .footer__address {
     justify-self: start;
-    max-width: 240px;
+    max-width: 261px;
 }
-
-.footer__menu {}
 
 .footer__menu-list {
     list-style: none;
@@ -282,26 +280,12 @@
     white-space: nowrap;
 }
 
-.footer__menu-list-item {}
-
-.footer__menu-link {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    text-decoration-skip-ink: none;
-}
-
-.footer__menu-link_active {
-    text-decoration: none;
-}
-
 .footer__social-list {
     display: flex;
-    gap: 50px;
+    gap: 48px;
     justify-self: end;
     list-style: none;
 }
-
-.footer__social-list-item {}
 
 .footer__social-link {
     display: block;
