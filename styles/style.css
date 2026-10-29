@@ -26,7 +26,6 @@
     list-style: none;
 }
 .header__link {
-    color: inherit;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
@@ -55,7 +54,6 @@
     font-style: normal;
 }
 .address__link {
-    color: inherit;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -63,21 +61,81 @@
 }
 
 .cover {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
     min-height: 757px;
     padding: 165px 50px 50px;
+    color: #fff;
     background: url("../images/cover.jpg") center / cover no-repeat;
 }
 
-.overlay {}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-.cover__title {}
-.line {}
-.line_left {}
-.line_center {}
-.line_right {}
-.cover__bottom {}
-.cover__text {}
-.button {}
+.cover__title {
+    position: relative;
+    z-index: 1;
+    font-size: var(--font-size-omega-large);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_left {
+    text-align: left;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.35em;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cover__description-text {
+    font-size: var(--font-size-large);
+    word-spacing: 24px;
+    text-transform: uppercase;
+}
+
+.bet-button {
+    padding: 16px 36px;
+    border: 1px solid #fff;
+    font-size: var(--font-size-large);
+    color: inherit;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 .lots {
     padding: 180px 24px 0;
@@ -89,6 +147,7 @@
 
 .card {}
 .card__body {
+    position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,8 +161,14 @@
 .card__body_picture {
     background-image: url("../images/card-lot-03.jpg");
 }
-.card__title {}
-.card__text {}
+.card__title {
+    position: relative;
+    z-index: 1;
+}
+.card__text {
+    position: relative;
+    z-index: 1;
+}
 
 .about {
     margin-top: 120px;
