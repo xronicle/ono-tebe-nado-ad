@@ -1,1 +1,68 @@
-/* место для вашего кода */
+:root {
+    --font-size-small: 18px;
+    --font-size-medium: 20px;
+    --font-size-large: 22px;
+    --font-size-extra-large: 40px;
+    --font-size-omega-large: 100px;
+}
+
+.header {}
+
+.menu {}
+.menu__list {}
+.menu__item {}
+.menu__item_no-dot {}
+.menu__link {}
+.menu__link_active {}
+
+.logo {}
+
+.address {}
+.address_right {}
+.address__link {}
+
+.cover {}
+
+.overlay {}
+
+.cover__title {}
+.line {}
+.line_left {}
+.line_center {}
+.line_right {}
+.cover__bottom {}
+.cover__text {}
+.button {}
+
+.lots {}
+.lots__title {}
+.lots__list {}
+.lots__item {}
+.lots__more {}
+
+.card {}
+.card__body {}
+.card__body_film {}
+.card__body_book {}
+.card__body_picture {}
+.card__title {}
+.card__text {}
+
+.about {}
+.about__col {}
+.about__logo {}
+.about__logo-img {}
+.about__title {}
+.about__text {}
+
+.footer {}
+.footer__menu {}
+.footer__list {}
+.footer__item {}
+.footer__link {}
+.footer__link_active {}
+
+.social {}
+.social__item {}
+.social__link {}
+.social__icon {}
