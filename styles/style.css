@@ -6,7 +6,9 @@
     --font-size-omega-large: 100px;
 }
 
-.header {}
+.header {
+    padding: 92px 50px 96px;
+}
 
 .menu {}
 .menu__list {}
@@ -21,7 +23,11 @@
 .address_right {}
 .address__link {}
 
-.cover {}
+.cover {
+    min-height: 757px;
+    padding: 165px 50px 50px;
+    background: url("../images/cover.jpg") center / cover no-repeat;
+}
 
 .overlay {}
 
@@ -34,28 +40,45 @@
 .cover__text {}
 .button {}
 
-.lots {}
+.lots {
+    padding: 180px 24px 0;
+}
 .lots__title {}
 .lots__list {}
 .lots__item {}
 .lots__more {}
 
 .card {}
-.card__body {}
-.card__body_film {}
-.card__body_book {}
-.card__body_picture {}
+.card__body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card__body_film {
+    background-image: url("../images/card-lot-01.jpg");
+}
+.card__body_book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+.card__body_picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
 .card__title {}
 .card__text {}
 
-.about {}
+.about {
+    margin-top: 120px;
+    padding-inline: 24px;
+}
 .about__col {}
 .about__logo {}
 .about__logo-img {}
 .about__title {}
 .about__text {}
 
-.footer {}
+.footer {
+    padding: 180px 50px 82px;
+}
 .footer__menu {}
 .footer__list {}
 .footer__item {}
